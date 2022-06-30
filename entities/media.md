@@ -24,6 +24,26 @@ The generated artifacts are stored in Amazon S3, and can be found at the `url` f
 
 If an object record falls under the CC0 license, its media link will contain `cc0: true`, else there will not be a `cc0` field on the link. For example, see [this record](https://ch-api.ch-dev-use.link/?query=%7B%0A%20%20object(identifier%3A%229346%22)%7B%0A%09%09id%0A%20%20%20%20multimedia%20%20%20%20%0A%20%20%7D%0A%7D).
 
+Linked media data may also contain Google Vision AI enhancements which show the RGB and hex values of the Google Vision color detection. The hex values are also copied to `colors` as a string of hex values. The Google Vision data is visible under `gvision.colors`
 
+An example of color searching can be found [https://ch-api.ch-dev-use.link/?query={%0A%20%20object(colors%3A%22%238eabae%22)%20{%0A%20%20%20%20id%0A%20%20%20%20colors%0A%20%20%20%20multimedia%0A%20%20}%0A}](here).
+
+```
+"gvision": {
+  "colors": [
+    {
+      "confidence": "58.85",        # The AI's confidence of the result in %
+      "fraction": 0.37141976,       # The fraction of pixels the color occupies in the image
+      "hex": "#8eabae",             # The hex value of the color
+      "rgb": {
+        "blue": 174,        
+        "green": 171,
+        "red": 142,
+        "value": "142, 171, 174"    # The combined RGB values
+      }
+    }
+  ]
+},
+```
 
 

@@ -10,6 +10,7 @@ These are the fields you can query on the object entity:
     classification
     collectionsOnlineId
     culture 
+    colors
     date 
     department 
     description 
@@ -78,6 +79,7 @@ agent: string
 collectionsOnlineId: string
 country: string
 culture: string
+colors: string
 department : string
 departmentId: string
 displayed: boolean
