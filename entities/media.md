@@ -33,7 +33,7 @@ An example of color searching can be found [here](https://ch-api.ch-dev-use.link
   "colors": [
     {
       "confidence": "58.85",        # The AI's confidence of the result in %
-      "fraction": 0.37141976,       # The fraction of pixels the color occupies in the image
+      "fraction": 0.37141976,       # The fraction of pixels the color occupies in the image [0-1]
       "hex": "#8eabae",             # The hex value of the color
       "rgb": {
         "blue": 174,        
