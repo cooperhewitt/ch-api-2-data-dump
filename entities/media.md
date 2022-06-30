@@ -26,7 +26,7 @@ If an object record falls under the CC0 license, its media link will contain `cc
 
 Linked media data may also contain Google Vision AI enhancements which show the RGB and hex values of the Google Vision color detection. The hex values are also copied to `colors` as a string of hex values. The Google Vision data is visible under `gvision.colors`
 
-An example of color searching can be found [https://ch-api.ch-dev-use.link/?query={%0A%20%20object(colors%3A%22%238eabae%22)%20{%0A%20%20%20%20id%0A%20%20%20%20colors%0A%20%20%20%20multimedia%0A%20%20}%0A}](here).
+An example of color searching can be found [here](https://ch-api.ch-dev-use.link/?query={%0A%20%20object(colors%3A%22%238eabae%22)%20{%0A%20%20%20%20id%0A%20%20%20%20colors%0A%20%20%20%20multimedia%0A%20%20}%0A}).
 
 ```
 "gvision": {
