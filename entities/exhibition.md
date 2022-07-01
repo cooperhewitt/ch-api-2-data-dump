@@ -13,6 +13,7 @@ These are all the fields you can query on the Exhibition entity.
     location
     summary
     title
+    date
     object {
         id 
         summary
