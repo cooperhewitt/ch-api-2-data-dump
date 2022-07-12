@@ -65,8 +65,9 @@ These are the fields you can query on the object entity:
 * For the nested queries you can use all the fields available for that entity. For simplicity we have limited this to `id` and `summary` for the docs.
 
 ##### Color
-This is an example of color searching.
+Here are two examples of color searching.
 
+###### Example 1
 Request:
 ```
 {
@@ -77,6 +78,7 @@ Request:
   }
 }
 ```
+
 Response:
 ```{
   "data": {
@@ -221,6 +223,47 @@ Response:
     }
   }
 }
+```
+
+###### Example 2
+Request:
+```
+{
+  object(identifier:"120873") {
+    colors
+  }
+}
+```
+
+Response:
+```
+{
+  "data": {
+    "object": [
+      {
+        "colors": [
+          "#7e7362",
+          "#615747",
+          "#a49785",
+          "#d6c3ac",
+          "#5a5448",
+          "#413829",
+          "#3a362b",
+          "#7a7266",
+          "#a19a8d",
+          "#ecd9c3"
+        ]
+      }
+    ]
+  },
+  "extensions": {
+    "pagination": {
+      "hits": 1,
+      "per_page": 10,
+      "current_page": 0,
+      "number_of_pages": 1
+    }
+  }
 ```
 
 #### Arguments
