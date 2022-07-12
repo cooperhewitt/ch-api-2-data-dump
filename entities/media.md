@@ -12,6 +12,134 @@ The best way to find records with media is to include the `hasMedia: true` flag 
 }
 ```
 
+#### cc0
+If an object record has a linked media record, and its rights contain ‘CC0’ then all the linked media will be CC0. It is based on the TMS data rule from Cooper Hewitt this moment (202207). When a record is CC0, both the object and media link will have the CC0 flag which can be seen in multimedia.cc0 and legal.cc0. If a record has no multimedia.cc0/legal.cc0 field at all, then it is not CC0. In other words, the CC0 flag is only on the record when the record is CC0.
+
+Please see the response from the request as an example,
+
+```
+{
+  "data": {
+    "object": [
+      {
+        "multimedia": [
+          {
+            "cc0": true,
+            "datatype": {
+              "actual": "image",
+              "base": "media"
+            },
+            "department": [
+              {
+                "@admin": {
+                  "id": "department-25",
+                  "source": "tms",
+                  "status": "public",
+                  "uuid": "4dd6611b-dc73-3841-8154-209e3436cc34"
+                }
+              }
+            ],
+            "id": "media-68817",
+            "large": {
+              "format": "jpeg",
+              "location": "68/817/large_1916_29_111_01_RS.jpg",
+              "measurements": {
+                "dimensions": [
+                  {
+                    "dimension": "height",
+                    "units": "pixels",
+                    "value": 1024
+                  },
+                  {
+                    "dimension": "width",
+                    "units": "pixels",
+                    "value": 1641
+                  }
+                ],
+                "filesize": {
+                  "units": "bytes",
+                  "value": 193869
+                }
+              },
+              "url": "https://ciim-static-media.s3.us-east-1.amazonaws.com/68/817/large_1916_29_111_01_RS.jpg"
+            },
+            "legal": {
+              "rights": [
+                {
+                  "holder": "Cooper-Hewitt, National Design Museum, Smithsonian Institution",
+                  "type": "copyright"
+                }
+              ]
+            },
+            "original": {
+              "format": "jpeg",
+              "location": "68/817/1916_29_111_01_RS.jpg",
+              "measurements": {
+                "dimensions": [
+                  {
+                    "dimension": "height",
+                    "units": "pixels",
+                    "value": 1872
+                  },
+                  {
+                    "dimension": "width",
+                    "units": "pixels",
+                    "value": 3000
+                  }
+                ],
+                "filesize": {
+                  "units": "bytes",
+                  "value": 3543848
+                }
+              },
+              "processed": true,
+              "url": "https://ciim-static-media.s3.us-east-1.amazonaws.com/68/817/1916_29_111_01_RS.jpg"
+            },
+            "preview": {
+              "format": "jpeg",
+              "location": "68/817/preview_1916_29_111_01_RS.jpg",
+              "measurements": {
+                "dimensions": [
+                  {
+                    "dimension": "height",
+                    "units": "pixels",
+                    "value": 350
+                  },
+                  {
+                    "dimension": "width",
+                    "units": "pixels",
+                    "value": 561
+                  }
+                ],
+                "filesize": {
+                  "units": "bytes",
+                  "value": 54057
+                }
+              },
+              "url": "https://ciim-static-media.s3.us-east-1.amazonaws.com/68/817/preview_1916_29_111_01_RS.jpg"
+            },
+            "summary": {
+              "title": "1916_29_111_01_RS.jpg"
+            },
+            "type": "image"
+          }
+        ],
+        "legal": {
+          "cc0": true,
+          "credit": "Gift of Georgina and Louisa L. Schuyler",
+          "rights": [
+            {
+              "details": "no information in file",
+              "type": "copyright"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
 #### Media Artifacts
 These are the fields within the `multimedia` block. Each entry will contain several sizes of media, referred to as 'artifacts'. 
 The current artifacts are:
