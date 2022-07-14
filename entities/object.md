@@ -284,6 +284,7 @@ culture: string
 colors: string
 department : string
 departmentId: string
+description: string
 displayed: boolean
 dynasty: string
 exhibition: string
