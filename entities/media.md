@@ -174,4 +174,14 @@ An example of color searching can be found [here](https://ch-api.ch-dev-use.link
 },
 ```
 
+To search for object records that have color data, you can add a search filter `hasColors:true`. For example:
+```
+{
+  object(hasColors:true) {
+    id
+    color
+  }
+}
+```
+
 
