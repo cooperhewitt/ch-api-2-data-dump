@@ -184,4 +184,21 @@ To search for object records that have color data, you can add a search filter `
 }
 ```
 
+#### Specific Media Artifacts
+There is a separate search point that can be used if you know specifically which media artifact you are interested in.
+
+```
+{
+  object(hasImages:true) {
+    media {
+      id
+      large
+      preview
+      zoom
+      original
+    }
+  }
+}
+```
+
 
