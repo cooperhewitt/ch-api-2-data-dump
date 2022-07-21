@@ -161,7 +161,6 @@ Response:
             "id": "media-379749",
             "large": {
               "format": "jpeg",
-              "location": "379/749/large_CHSDM_BC0DBD6EF38D2_1.jpg",
               "measurements": {
                 "dimensions": [
                   {
@@ -184,7 +183,6 @@ Response:
             },
             "preview": {
               "format": "jpeg",
-              "location": "379/749/preview_CHSDM_BC0DBD6EF38D2_1.jpg",
               "measurements": {
                 "dimensions": [
                   {

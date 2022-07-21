@@ -42,7 +42,6 @@ Please see the response from the request as an example,
             "id": "media-68817",
             "large": {
               "format": "jpeg",
-              "location": "68/817/large_1916_29_111_01_RS.jpg",
               "measurements": {
                 "dimensions": [
                   {
@@ -73,7 +72,6 @@ Please see the response from the request as an example,
             },
             "original": {
               "format": "jpeg",
-              "location": "68/817/1916_29_111_01_RS.jpg",
               "measurements": {
                 "dimensions": [
                   {
@@ -97,7 +95,6 @@ Please see the response from the request as an example,
             },
             "preview": {
               "format": "jpeg",
-              "location": "68/817/preview_1916_29_111_01_RS.jpg",
               "measurements": {
                 "dimensions": [
                   {
