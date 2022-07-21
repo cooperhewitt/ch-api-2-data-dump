@@ -288,7 +288,9 @@ dynasty: string
 exhibition: string
 exhibitionId: string
 geography: string
+hasColors: boolean
 hasImages: boolean
+hasZoom: boolean
 identifier: string
 id: string
 loaned: boolean
