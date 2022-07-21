@@ -181,6 +181,19 @@ To search for object records that have color data, you can add a search filter `
 }
 ```
 
+#### Zooms ####
+Zoomable images are in the Pyramid Tiff (ptif) format. These are exposed in the API under `multimedia.zoom.url`. 
+Zooms are served via [Cantaloupe](https://cantaloupe-project.github.io/), so depending on the required use case, you may need to append different suffixes to the URL.
+
+To find records with zooms, you can use [this query](https://ch-api.ch-dev-use.link/?query=%7B%0A%20%20object(hasZoom%3Atrue)%20%7B%0A%20%20%20%20media%20%7B%0A%20%20%20%20%20%20zoom%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D).
+
+To resolve zoom IIIF data, you can append `/info.json` to the URL. For example: https://ch-api.ch-dev-use.link/iiif/3/138%2f845%2fCHSDM_283851_04.ptif/info.json 
+
+To resolve a jpeg thumbnail of the zoom, you can append `/full/max/0/default.jpg` to the URL. For example: https://ch-api.ch-dev-use.link/iiif/3/309%2f819%2f83_2016_5.ptif/full/max/0/default.jpg
+
+To resolve the ptif as a zoomable image, a zoom viewer will need to be used in conjunction with the URL.
+ 
+
 #### Specific Media Artifacts
 There is a separate `media` field that can be used if you know specifically which media artifact you are interested in.
 
@@ -198,5 +211,8 @@ There is a separate `media` field that can be used if you know specifically whic
   }
 }
 ```
+
+
+
 
 
