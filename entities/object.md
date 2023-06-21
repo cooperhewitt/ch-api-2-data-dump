@@ -10,7 +10,7 @@ These are the fields you can query on the object entity:
     classification
     collectionsOnlineId
     culture 
-    colors
+    color
     date 
     department 
     description 
@@ -71,9 +71,9 @@ Here are two examples of color searching.
 Request:
 ```
 {
-  object(colors:"#8eabae") {
+  object(color:"#8eabae") {
     id
-    colors    
+    color   
     multimedia
   }
 }
@@ -85,7 +85,7 @@ Response:
     "object": [
       {
         "id": "object-284370",
-        "colors": [
+        "color": [
           "#8eabae",
           "#9dbabc",
           "#a0b9bd",
@@ -99,7 +99,7 @@ Response:
               "base": "media"
             },
             "gvision": {
-              "colors": [
+              "color": [
                 {
                   "confidence": "58.85",
                   "fraction": 0.37141976,
@@ -228,7 +228,7 @@ Request:
 ```
 {
   object(identifier:"120873") {
-    colors
+    color
   }
 }
 ```
@@ -239,7 +239,7 @@ Response:
   "data": {
     "object": [
       {
-        "colors": [
+        "color": [
           "#7e7362",
           "#615747",
           "#a49785",
@@ -279,7 +279,7 @@ agent: string
 collectionsOnlineId: string
 country: string
 culture: string
-colors: string
+color: string
 department : string
 departmentId: string
 description: string
